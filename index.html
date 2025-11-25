@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- model viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <title>Uniform Discrete Diffusion with Metric Path for Video Generation</title>
+    <link rel="icon" type="image/x-icon" href="../assets/css/images/favicon.ico">
+    <meta content="Uniform Discrete Diffusion with Metric Path for Video Generation" name="description" />
+    <meta content="summary" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="static/css/template.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/my_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic", "Changa One:400,400italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Varela Round:400", "Bungee Shade:regular", "Roboto:300,regular,500"]
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        ! function (o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <script type="text/javascript" src="static/js/zoom.js"></script>
+    <script type="text/javascript" src="static/js/video_comparison.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLDP9MKGC8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MLDP9MKGC8');
+    </script>
+</head>
+
+<body>
+    <!-- title -->
+    <div class="section hero nerf-_v2">
+        <div class="container-2 nerf_header_v2 w-container">
+            <h1 class="nerf_title_v2">ICLR 2026 Conference Submission 10709</h1>
+            <h1 class="nerf_title_v2">Uniform Discrete Diffusion with Metric Path for Video Generation</h1>
+        </div>
+    </div>
+
+    <!-- Visual Results -->
+    <div class="white_section_nerf w-container">
+        <!-- t2v -->
+        <div class="white_section_nerf w-container">
+            <h3 class="grey-heading_nerf">⭐️ Text-to-Video Visualization</h2>
+                <div class="grid-container-video">
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/23.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/19.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/17.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/2.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/5.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/10.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/21.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/20.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/12.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/22.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/8.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+        <!-- i2v -->
+        <div class="white_section_nerf w-container">
+            <h3 class="grey-heading_nerf">⭐️ Image-to-Video Visualization</h2>
+                <div class="grid-container-video">
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a bird with a fish in its beak flying over a field-4.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a brown bear in the water with a fish in its mouth-0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a building that is sitting on the side of a pond-0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a castle on top of a hill covered in snow-0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a city street at night during a snow storm, camera tilts up-0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a couple of horses are running in the dirt-0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a group of pots on a stove with flames in the background-1.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a large pot of soup filled with vegetables and meat-3.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/A little girl, lost in thought, is quietly sitting on the bus-0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/A man in a black suit and a sombrero, shouting loudly-0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a stack of pancakes covered in syrup and fruit-0.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/videos/a woman smiles while holding a yellow flower-1.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+        <!-- ar -->
+        <div class="white_section_nerf w-container">
+            <h3 class="grey-heading_nerf">⭐️ Video Extrapolation Visualization</h2>
+                <div class="grid-container-video">
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/15.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/19.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/40.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/41.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/42.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/48.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/55.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/56.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/78.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/92.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/115.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/119.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+        <!-- ar-first-end -->
+        <div class="white_section_nerf w-container">
+            <h3 class="grey-heading_nerf">⭐️ Video Interpolation Visualization</h2>
+                <div class="grid-container-video">
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/snow.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/girl.mp4" type="video/mp4"></video>
+                    <video muted autoplay controls loop class="video-item"><source src="assets/ar_video/sheep.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+         <!-- long compare -->
+        <div class="white_section_nerf w-container">
+            <h3 class="grey-heading_nerf">⭐️ Comparision of Long Video Generation</h2>
+            <h5 class="grey-heading_nerf" style="font-size: 30px;padding-left: 20px;">SkyReelsV2-1.3B ⚔️ UDM-1.7B (💪🏻 Winner) </h3>
+            <div class="grid-container-video" style="grid-template-columns: repeat(2, 1fr)">
+                <video muted autoplay controls loop class="video-item"><source src="assets/long/skyreelv2.mp4" type="video/mp4"></video>
+                <video muted autoplay controls loop class="video-item"><source src="assets/long/udm.mp4" type="video/mp4"></video>
+            </div>
+            <h5 class="grey-heading_nerf" style="font-size: 30px;padding-left: 20px;">SelfForcing-1.3B ⚔️ UDM-1.7B (💪🏻 Winner) </h3>
+            <div class="grid-container-video" style="grid-template-columns: repeat(2, 1fr)">
+                <video muted autoplay controls loop class="video-item"><source src="assets/long/self_forcing.mp4" type="video/mp4"></video>
+                <video muted autoplay controls loop class="video-item"><source src="assets/long/udm2.mp4" type="video/mp4"></video>
+            </div>
+
+            <p style="margin-top: 20px; font-size: 18px; padding-left: 20px;">
+                Compared with Self-Forcing and Diffusion Forcing (SkyReelsV2), our method exhibits smaller cumulative error and stronger long-sequence consistency, resulting in more stable motion evolution. The visual quality is currently bounded by the VQ tokenizer, which we leave as an important direction for future improvement.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+<footer></footer>
+</html>
